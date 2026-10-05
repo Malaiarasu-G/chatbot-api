@@ -1,0 +1,20 @@
+command:
+  - uvicorn
+  - app:app
+  - --host
+  - "0.0.0.0"
+  - --port
+  - "8000"
+
+env:
+  - name: AZURE_OPENAI_ENDPOINT
+    value: "https://databricks-api.openai.azure.com/"
+  - name: AZURE_OPENAI_DEPLOYMENT
+    value: "gpt-4o"
+  - name: AZURE_OPENAI_API_VERSION
+    value: "2024-10-21"
+  # Set your API key via Databricks App secrets (do NOT hardcode here)
+  - name: AZURE_OPENAI_API_KEY
+    valueFrom: AZURE_OPENAI_API_KEY
+  - name: PPT_VOLUME_PATH
+    value: "/Volumes/integrated_intelligence_poc/default/kiip_docs/ppts"
