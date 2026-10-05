@@ -8,13 +8,13 @@ command:
 
 env:
   - name: AZURE_OPENAI_ENDPOINT
-    value: "https://databricks-api.openai.azure.com/"
+    value: "https://genaimarketplace-api.kenvue.com/"
   - name: AZURE_OPENAI_DEPLOYMENT
-    value: "gpt-4o"
+    value: "gpt-5.4"
   - name: AZURE_OPENAI_API_VERSION
-    value: "2024-10-21"
+    value: "2025-01-01-preview"
   # Set your API key via Databricks App secrets (do NOT hardcode here)
   - name: AZURE_OPENAI_API_KEY
-    valueFrom: AZURE_OPENAI_API_KEY
+    valueFrom: 42078e30-106d-43da-bef9-fc1152ce418c
   - name: PPT_VOLUME_PATH
-    value: "/Volumes/integrated_intelligence_poc/default/kiip_docs/ppts"
+    value: "/Volumes/kvai_pro110022/rcl_agent_snapshot/ppt_knowledge_base"
